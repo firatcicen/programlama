@@ -1,0 +1,18 @@
+
+a=int(input("Finans geliri:"))
+b=int(input("Finans gideri:"))
+c=int(input("Pazar geliri:"))
+d=int(input("Pazar gideri:"))
+e=int(input("Kira geliri:"))
+f=int(input("Kira gideri:"))
+h=int(input("Ücret:"))
+k=int(input("Muhasebe gideri:"))
+gelir=a+c+e
+gider=b+d+f+k+h
+u=gelir-gider
+if (u>1000):
+    print ("İşletme kar etmiştir")
+elif (u<1000):
+    print ("İşletme zarar etmiştir")
+else:
+    print("İşletme başa baş noktasındadır")
