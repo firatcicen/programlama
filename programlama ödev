@@ -1,3 +1,4 @@
+#ödev soru1
 
 a=int(input("Finans geliri:"))
 b=int(input("Finans gideri:"))
@@ -16,3 +17,28 @@ elif (u<1000):
     print ("İşletme zarar etmiştir")
 else:
     print("İşletme başa baş noktasındadır")
+
+#ödev soru2
+
+def oeeHesapla():
+    a=int(input("Planlanmış üretim süresi:"))
+    b=int(input("Plansız duruş:"))
+    c=int(input("Standar çevrim zamanı:"))
+    d=int(input("Üretim miktarı:"))
+    e=int(input("Sağlam ürün miktarı:"))
+    f=int(input("Toplam üretim miktarı:"))
+    kullanabilirlik=(a-b)/a
+    performans=(c*d)/(a-b)
+    kalite=e/f
+    oee=kullanabilirlik*performans*kalite
+    print(oee)
+
+#ödev soru3
+
+def adamBasiCiroHesapla():
+    a=int(input("Satış miktarı süresi:"))
+    b=int(input("Birim satış fiyatı:"))
+    c=int(input("Toplam çalışan sayısı:"))
+    toplamCiro=a*b
+    adamBasiCiro=toplamCiro/c
+    return adamBasiCiro
